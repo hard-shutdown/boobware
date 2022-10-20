@@ -25,12 +25,12 @@ func encryptFile(path string, key []byte) {
 
 	enc, err := xmezum.Encrypt(key, buf)
 	if err != nil {
-		panic(err)
+		return
 	}
 
 	n, err := file.Write(enc)
 	if err != nil {
-		panic(err)
+		return
 	}
 	fmt.Println(n)
 
@@ -55,12 +55,12 @@ func decryptFile(path string, key []byte) {
 
 	enc, err := xmezum.Decrypt(key, buf)
 	if err != nil {
-		panic(err)
+		return
 	}
 
 	n, err := file.Write(enc)
 	if err != nil {
-		panic(err)
+		return
 	}
 	fmt.Println(n)
 

@@ -1,5 +1,3 @@
-github.com/hard-shutdown/xmezum v0.0.0-20221019154415-1cc66684b7e2 h1:wt8/ePecKmEkdEP18SQML+I4jT0RgY2ELfyTXfb71yc=
-github.com/hard-shutdown/xmezum v0.0.0-20221019154415-1cc66684b7e2/go.mod h1:VPrawJp1M32Y1vEoALZ5bIblvQsh6n2H1JnTPVTdnR8=
 github.com/hard-shutdown/xmezum v0.0.1 h1:lZquHHK36rJg7aWiCS6TMiSpAoyiGW+rF3lbRvaNmxQ=
 github.com/hard-shutdown/xmezum v0.0.1/go.mod h1:VPrawJp1M32Y1vEoALZ5bIblvQsh6n2H1JnTPVTdnR8=
 github.com/karrick/godirwalk v1.17.0 h1:b4kY7nqDdioR/6qnbHQyDvmA17u5G1cZ6J+CZXwSWoI=
